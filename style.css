@@ -36,10 +36,22 @@ button:hover{
     border-radius: 10px;
 }
 
+.empty-slot:hover{
+    transform:scale(1);
+    box-shadow: none;
+    border-radius: 0px;
+}
+
 button:active{
     transform:scale(0.9);
     box-shadow: 0 12px 16px 10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     border-radius: 10px;
+}
+
+.empty-slot:active{
+    transform:scale(1);
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 h1{

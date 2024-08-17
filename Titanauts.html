@@ -7,40 +7,26 @@
         <style>
             li{
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-size: 25px;
                 color: rgb(193,207,179);
+                font-size: 30px;
             }
-
-            .gallery{
+            .background{
                 position: absolute;
-                width: 50%;
-                height: 55%;
-                margin-top: 7%;
-                margin-left:47%;
-                box-shadow: none;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+                min-height: 100%;
+                background-image: url(images/Titanauts/background.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index:-100;
             }
-
-            .left-arrow{
-                margin-left: 3%;
-                position: absolute;
-                margin-top: 23.5%;
-            }
-
-            .right-arrow{
-                margin-left: 90%;
-                position: absolute;
-                margin-top: 23.5%;
-            }
-
         </style>
         <script type="text/javascript">
             var images = [], currentIndex = 0;
-            images[0] = "images/Bloodfueled/image1.png"
-            images[1] = "images/Bloodfueled/image2.png"
-            images[2] = "images/Bloodfueled/image3.png"
-            images[3] = "images/Bloodfueled/image4.png"
-            images[4] = "images/Bloodfueled/image5.png"
-            images[5] = "images/Bloodfueled/image6.png"
+            images[0] = "images/Titanauts/image1.png"
+            images[1] = "images/Titanauts/image2.png"
+
             var timer;
 
             function nextImage()
@@ -65,47 +51,45 @@
             }
 
             function setTimer() {
-                timer = setInterval(nextImage, 5000);
-            }
+              timer = setInterval(nextImage, 5000);
+          }
         </script>
     </head>
     <body onload="setTimer()">
-        <video autoplay muted loop>
-            <source src=images/Bloodfueled/Trailer.mp4 type="video/mp4">
-        </video>
+        <div class="background"></div>
         <div class="trailer"></div>
         <a href="index.html"><button type="button" class="home-button"><img src="images/homeIcon.png" style="width: 50px; height: 50px;"></button></a>
         <div class="name">
-            <p class="project-name" style="font-size: 100px;">BLOODFUELED</p>
+            <p class="project-name" style="font-size: 100px;">TITANAUTS</p>
         </div>
         <div class="content">
             <div class="overview">
                 <p> <span style="font-size: 80px;">Overview</span>
-                    <span style="font-size: 30px;"><br>Bloodfueled is an action boss rush game where you challnge huge twisted foes and dismember them with your chainssword using their blood as fuel for you weapon.</p>
+                    <span style="font-size: 30px;"><br>Every millennium the Titanaut of Groovy Rhythm and the Titanaut of Chill Vibes fight each other over dominance of the universe, and to find out who is the coolest one.
+                        This time around the chosen game was pong. The ball? A moon. And the battlefield? The Milky Way.</span></p>
             </div>
             <div class="details">
                 <p style="font-size: 60px;">Details</p>
                     <ul style="margin-top: -50px;">
-                        <li>Development time: 7 months</li>
-                        <li>Collaborators: 16</li>
+                        <li>Development time: 4 weeks</li>
+                        <li>Collaborators: 6</li>
                         <li>Platform: PC</li>
-                        <li>Engine: Unreal Engine 5</li>
+                        <li>Engine: Unity</li>
                     </ul>
             </div>
             <div class="contribution">
                 <p style="font-size: 60px;">Contribution</p>
                     <ul style="margin-top: -50px;">
-                        <li>Character actions</li>
-                        <li>Boss AI behaviuor (State tree)</li>
-                        <li>Tutorial progression</li>
+                        <li>Level mechanics</li>
+                        <li>Player input</li>
                         <li>UI management</li>
                     </ul>
             </div>
             <div class="gallery">
                 <div class="left-arrow"><button class="scroll-image-button" onclick="previousImage()"><img src="images/arrow.png" ></button></div>
                 <div class="right-arrow"><button class="scroll-image-button" onclick="nextImage()"><img src="images/arrow.png" style="transform: rotate(180deg);"></button></div>
-                <img id="img" src="images/Bloodfueled/image1.png">
+                <img id="img" src="images/Titanauts/image1.png">
             </div>
-        </div> 
+        </div>
     </body>
 </html>
