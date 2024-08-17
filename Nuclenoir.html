@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Nuclenoir</title>
+        <link rel="stylesheet" type="text/css" href="projects_style.css">
+        <style>
+            li{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-style: italic;
+                color: rgb(193,207,179);
+                font-size: 30px;
+            }
+        </style>
+        <script type="text/javascript">
+            var images = [], currentIndex = 0;
+            images[0] = "images/Nuclenoir/image1.png"
+            images[1] = "images/Nuclenoir/image2.png"
+            images[2] = "images/Nuclenoir/image3.png"
+            images[3] = "images/Nuclenoir/image4.png"
+            images[4] = "images/Nuclenoir/image5.png"
+
+            var timer;
+
+            function nextImage()
+            {
+                clearInterval(timer);
+                currentIndex++;
+                currentIndex %= images.length;
+                document.getElementById("img").src = images[currentIndex];
+                timer = setInterval(nextImage, 5000);
+            }
+
+            function previousImage()
+            {
+                clearInterval(timer);
+                currentIndex--;
+                if(currentIndex == -1)
+                {
+                    currentIndex = images.length-1;
+                }
+                document.getElementById("img").src = images[currentIndex];
+                timer = setInterval(nextImage, 5000);
+            }
+
+            function setTimer() {
+              timer = setInterval(nextImage, 5000);
+          }
+        </script>
+    </head>
+    <body onload="setTimer()">
+        <video autoplay muted loop>
+            <source src=images/Nuclenoir/Trailer.mp4 type="video/mp4">
+        </video>
+        <div class="trailer"></div>
+        <div class="name">
+            <a href="index.html"><button type="button" class="home-button">Home</button></a>
+            <p class="project-name" style="font-size: 100px; margin-top: -20px;">NUCLENOIR</p>
+        </div>
+        <div class="content">
+            <div class="overview">
+                <p> <span style="font-size: 80px;">Overview</span>
+                    <span style="font-size: 30px; font-style: italic;"><br>Take the role of a spy infiltrating a nuclear power plant under construction during the cold war.<br>
+                    Pass yourself off as the safety inspector and sabotage their systems in this first-person stealth puzzle game.</span></p>
+            </div>
+            <div class="details">
+                <p style="font-size: 60px;">Details</p>
+                    <ul style="margin-top: -50px;">
+                        <li>Development time: 6 weeks</li>
+                        <li>Collaborators: 12</li>
+                        <li>Platform: PC</li>
+                        <li>Engine: Unity</li>
+                    </ul>
+            </div>
+            <div class="contribution">
+                <p style="font-size: 60px;">Contribution</p>
+                    <ul style="margin-top: -50px;">
+                        <li>Puzzle management and progression</li>
+                        <li>Character interactions</li>
+                        <li>UI management</li>
+                    </ul>
+            </div>
+            <div class="gallery">
+                <div class="left-arrow"><button class="scroll-image-button" onclick="previousImage()"><img src="images/arrow.png" ></button></div>
+                <div class="right-arrow"><button class="scroll-image-button" onclick="nextImage()"><img src="images/arrow.png" style="transform: rotate(180deg);"></button></div>
+                <img id="img" src="images/Nuclenoir/image1.png">
+            </div>
+        </div>
+    </body>
+</html>
