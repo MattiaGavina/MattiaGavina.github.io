@@ -3,14 +3,14 @@ body{
 }
 .project-link{
     align-content: center;
+    position: relative;
 }
 
-table{
-    width: 100%;
-}
-
-table tr td{
+.content{
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
 }
 
 button{
