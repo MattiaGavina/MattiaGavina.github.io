@@ -10,19 +10,6 @@
                 color: rgb(193,207,179);
                 font-size: 30px;
             }
-            body{
-                background-image: linear-gradient(rgba(60,60,60,0.6),rgba(60,60,60,0.6)), url(images/Titanauts/background.png);
-                background-repeat: repeat-y;
-                background-size: 100% 100%;
-            }
-            .background{
-                position: absolute;
-                top: 0;
-                left: 0;
-                min-width: 100%;
-                min-height: 100%;
-                z-index:-100;
-            }
         </style>
         <script type="text/javascript">
             var images = [], currentIndex = 0;
@@ -57,35 +44,37 @@
           }
         </script>
     </head>
-    <body onload="setTimer()">
-        <div class="background"></div>
-        <div class="trailer"></div>
+    <body onload="setTimer()"></body>
         <a href="index.html"><button type="button" class="home-button"><img src="images/homeIcon.png" style="width: 50px; height: 50px;"></button></a>
         <div class="name">
             <p class="project-name" style="font-size: 100px;">TITANAUTS</p>
         </div>
         <div class="content">
+            <div class="banner">
+                <img src="images/Titanauts/Presentation.png">
+            </div>
             <div class="overview">
-                <p> <span style="font-size: 80px;">Overview</span>
-                    <span style="font-size: 30px;"><br>Every millennium the Titanaut of Groovy Rhythm and the Titanaut of Chill Vibes fight each other over dominance of the universe, and to find out who is the coolest one.
-                        This time around the chosen game was pong. The ball? A moon. And the battlefield? The Milky Way.</span></p>
+                <p><span style="font-size: 30px;"><br>Every millennium the Titanaut of Groovy Rhythm and the Titanaut of Chill Vibes fight each other over dominance of the universe, and to find out who is the coolest one.
+                    This time around the chosen game was pong. The ball? A moon. And the battlefield? The Milky Way.</span></p>
             </div>
-            <div class="details">
-                <p style="font-size: 60px;">Details</p>
-                    <ul style="margin-top: -50px;">
-                        <li>Development time: 4 weeks</li>
-                        <li>Collaborators: 6</li>
-                        <li>Platform: PC</li>
-                        <li>Engine: Unity</li>
-                    </ul>
-            </div>
-            <div class="contribution">
-                <p style="font-size: 60px;">Contribution</p>
-                    <ul style="margin-top: -50px;">
-                        <li>Level mechanics</li>
-                        <li>Player input</li>
-                        <li>UI management</li>
-                    </ul>
+            <div style="width: 80%; margin:auto;">
+                <div class="details">
+                    <p style="font-size: 60px;">Details</p>
+                        <ul style="margin-top: -50px;">
+                            <li>Development time: 4 weeks</li>
+                            <li>Collaborators: 6</li>
+                            <li>Platform: PC</li>
+                            <li>Engine: Unity</li>
+                        </ul>
+                </div>
+                <div class="contribution">
+                    <p style="font-size: 60px;">Contribution</p>
+                        <ul style="margin-top: -50px;">
+                            <li>Level mechanics</li>
+                            <li>Player input</li>
+                            <li>UI management</li>
+                        </ul>
+                </div>
             </div>
             <div class="gallery">
                 <div class="left-arrow"><button class="scroll-image-button" onclick="previousImage()"><img src="images/arrow.png" ></button></div>

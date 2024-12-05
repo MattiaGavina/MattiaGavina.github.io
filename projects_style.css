@@ -10,22 +10,10 @@ p{
 }
 
 .trailer{
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    background-color: rgba(60,60,60,0.6);
-    z-index:-99;
-}
-
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index:-100;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    box-shadow: 0 12px 16px 10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .home-button{
@@ -55,40 +43,43 @@ video{
 
 
 .content{
-    position: relative;
-    height: 100%;
-    width: 100%;
+    display: block;
+    max-width: 60%;
+    margin: auto;
+}
+
+.banner
+{
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    box-shadow: 0 12px 16px 10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .overview{
     position: relative;
-    width: 35%;
-    height: 40%;
-    margin-top: 5%;
-    margin-left: 5%;
+    text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 .details{
-    position: absolute;
-    width: 20%;
-    height: 40%;
-    margin-top: -2%;
-    margin-left:5%;
+    position: relative;
+    width:50%;
+    float :left;
 }
 .contribution{
-    position: absolute;
-    width: 20%;
-    height: 40%;
-    margin-top: -2%;
-    margin-left:26%;
+    position: relative;
+    width:50%;
+    float:right;
 }
 
 .gallery{
     position: relative;
-    width: 45%;
-    height: 50%;
-    margin-top: -15%;
-    margin-left:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    width:80%;
     box-shadow: 0 12px 16px 10px rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -124,5 +115,5 @@ button{
 }
 
 body{
-    overflow: hidden;
+    background-color: rgb(50,50,50);
 }

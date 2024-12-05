@@ -46,42 +46,47 @@
         }
     </script>
     </head>
-    <body onload="setTimer()" >
-        <video autoplay muted loop>
-            <source src=images/DartsTown/Trailer.mp4 type="video/mp4">
-        </video>
-        <div class="trailer"></div>
+    <body onload="setTimer()"></body>
         <a href="index.html"><button type="button" class="home-button"><img src="images/homeIcon.png" style="width: 50px; height: 50px;"></button></a>
         <div class="name">
             <p class="project-name" style="font-size: 100px;">DARTSTOWN</p>
         </div>
         <div class="content">
+            <div class="banner">
+                <img src="images/DartsTown/Presentation.png">
+            </div>
             <div class="overview">
-                <p> <span style="font-size: 80px;">Overview</span>
-                    <span style="font-size: 30px;"><br>Bored of your 9-5 job? Luckily for you, your grandma can teach you how to become a professional Darts player. Explore the neighborhood of Bullseye Boulevard and improve your skills by competing with other players in the city’s traditional competition.</span></p>
+                <p><span style="font-size: 30px;"><br>Bored of your 9-5 job? Luckily for you, your grandma can teach you how to become a professional Darts player. Explore the neighborhood of Bullseye Boulevard and improve your skills by competing with other players in the city’s traditional competition.</span></p>
             </div>
-            <div class="details">
-                <p style="font-size: 60px;">Details</p>
-                    <ul style="margin-top: -50px;">
-                        <li>Development time: 11 weeks</li>
-                        <li>Collaborators: 12</li>
-                        <li>Platform: Mobile (Android)</li>
-                        <li>Engine: Unity</li>
-                    </ul>
+            <div class="trailer">
+                <video controls="controls" width="100%">
+                <source src=images/DartsTown/Trailer.mp4 type="video/mp4">
+                </video>
             </div>
-            <div class="contribution">
-                <p style="font-size: 60px;">Contribution</p>
-                    <ul style="margin-top: -50px;">
-                        <li>Level rules management</li>
-                        <li>Dart customization</li>
-                        <li>UI management</li>
-                    </ul>
+            <div style="width: 80%; margin:auto;">
+                <div class="details">
+                    <p style="font-size: 60px;">Details</p>
+                        <ul style="margin-top: -50px;">
+                            <li>Development time: 11 weeks</li>
+                            <li>Collaborators: 12</li>
+                            <li>Platform: Mobile (Android)</li>
+                            <li>Engine: Unity</li>
+                        </ul>
+                </div>
+                <div class="contribution">
+                    <p style="font-size: 60px;">Contribution</p>
+                        <ul style="margin-top: -50px;">
+                            <li>Level rules management</li>
+                            <li>Dart customization</li>
+                            <li>UI management</li>
+                        </ul>
+                </div>
             </div>
             <div class="gallery">
                 <div class="left-arrow"><button class="scroll-image-button" onclick="previousImage()"><img src="images/arrow.png" ></button></div>
                 <div class="right-arrow"><button class="scroll-image-button" onclick="nextImage()"><img src="images/arrow.png" style="transform: rotate(180deg);"></button></div>
                 <img id="img" src="images/DartsTown/image1.png">
             </div>
-        </div> 
+        </div>
     </body>
 </html>
